@@ -20,7 +20,7 @@ function App() {
     try {
       const result = await openai.completions.create({
         model: "gpt-3.5-turbo-instruct",
-        prompt: `Write a promotion email for a ${input} and add <br/> tag after every break`,
+        prompt: `Write a promotion email for a ${input}`,
         max_tokens: 4000,
         temperature: 0,
       });
